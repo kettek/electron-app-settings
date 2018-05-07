@@ -1,0 +1,25 @@
+{
+  "name": "electron-app-settings",
+  "version": "1.0.0",
+  "description": "Simple IPC-based settings framework for Electron",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "homepage": "https://github.com/kettek/electron-app-settings",
+  "author": {
+    "name": "Ketchetwahmeegwun T. Southall / kts of kettek",
+    "email": "kettek1@kettek.net",
+    "url": "http://kettek.net/"
+  },
+  "license": "GPL-3.0",
+  "keywords": [
+    "electron",
+    "settings",
+    "framework",
+    "electron-settings",
+    "configuration",
+    "storage",
+    "ipc"
+  ]
+}
