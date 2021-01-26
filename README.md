@@ -63,3 +63,15 @@ const settings = require('electron-app-settings');
   settings.get('cat');
   // => {name: "Cat", limbs: 4, fuzzy: true, tail: true}
 ```
+
+### Promises API
+`electron-app-settings` also has a Promise-style API accessible through the `promises` property of the settings object returned via `require('electron-app-settings')`. It functions exactly the same as the normal API with any return values being returned through the Promise's resolve callback. Access through the promises interface ensures that full renderer to main process IPC communication has already been completed.
+
+```js
+// RENDERER PROCESS
+const settings = require('electron-app-settings');
+
+// ... somewhere in an async function
+  await settings.promises.get('cat');
+  // => {name: "Cat", limbs: 4, fuzzy: true, tail: true}
+```
