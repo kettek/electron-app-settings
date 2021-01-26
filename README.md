@@ -23,7 +23,7 @@ $ npm install electron-app-settings --save
 ```
 
 ## Usage
-`electron-app-settings` can simply be required wherever it is needed, regardless of if it has been loaded in the main process or not, as the module will automatically handle setting itself up in the main process.
+`electron-app-settings` can simply be required wherever it is needed, regardless of if it has been loaded in the main process or not, as the module will automatically handle setting itself up in the main process. If using a packer, it may be necessary to disable the use of `remote.require` via the `NO_REMOTE_REQUIRE` environment variable. If `NO_REMOTE_REQUIRE` is set, then you must ensure that the main process requires `electron-app-settings` as well as the renderer process.
 
 The configuration file is presumed to be located at "[userData](https://github.com/electron/electron/blob/master/docs/api/app.md#appgetpathname)/Settings" and will be saved on application quit.
 
