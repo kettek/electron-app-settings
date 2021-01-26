@@ -1,6 +1,6 @@
 {
   "name": "electron-app-settings",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Simple IPC-based settings framework for Electron",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,7 @@
     "email": "kettek1@kettek.net",
     "url": "http://kettek.net/"
   },
-  "license": "GPL-3.0",
+  "license": "MPL-2.0",
   "keywords": [
     "electron",
     "settings",
