@@ -6,4 +6,12 @@
  * @copyright 2018-2021 Ketchetwahmeegwun T. Southall <kettek1@kettek.net>
  * @license MPL-2.0
  */
-module.exports = (process.type === 'browser' ? require('./lib/Main') : require('./lib/Renderer'));
+
+const Settings = require('./lib/Settings')
+/** 
+ * @type Settings
+ * @const
+ */
+const instance = (process.type === 'browser' ? require('./lib/Main') : require('./lib/Renderer'));
+
+module.exports = instance
