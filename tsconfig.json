@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "allowJs": true,
+    "checkJs": true,
+    "declaration": true,
+    "noEmit": false,
+    "emitDeclarationOnly": true,
+    "types": ["electron"]
+  },
+  "exclude": [
+    "node_modules",
+    "*.d.ts",
+    "lib/*.d.ts"
+  ],
+  "include": [
+    "index.js",
+    "lib/*.js"
+  ]
+}
